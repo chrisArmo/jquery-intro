@@ -1,0 +1,163 @@
+/*  Base
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.2em "Montserrat", sans-serif;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    border-style: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+/*  Container
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+    width: 95%;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0.3em;
+    margin: 40px auto;
+    background: linear-gradient(140deg, #4d8ad1, #758ed1);
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container button {
+    position: relative;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease-out;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: #b3d3d3;
+}
+
+.container button:active {
+    top: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*  Container & To-do Ul
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container h1,
+.to-do {
+    align-self: center;
+}
+
+/*  Container & To-do Li
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container,
+.to-do li {
+    display: flex;
+}
+
+/*  Entry
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.entry {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.entry label {
+    margin-right: 8px;
+}
+
+#enter {
+    width: 160px;
+    margin-right: 8px;
+}
+
+/*  Entry & To-do Ul
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#enter,
+.to-do input[type=text] {
+    padding: 0.3em 0.4em 0.2em;
+    border-style: none;
+    border-radius: 0.18em;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#enter:focus ,
+.to-do input[type=text]:focus {
+    background: linear-gradient(0deg, #576773, #4d5964);
+    color: #ff9416;
+    font-weight: 700;
+}
+
+/*  To-do Ul
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.to-do {
+    width: 80%;
+    display: none;
+    padding-left: 0;
+}
+
+.to-do li {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.to-do li:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.to-do input[type=text] {
+    width: 250px;
+}
+
+.to-do span,
+.to-do input[type=text] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*  Edit Button & Save Button
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.edit,
+.save {
+    margin-right: 8px;
+    margin-left: auto;
+}
+
+/*  Food
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+.food li {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

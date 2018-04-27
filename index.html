@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- google font css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- author css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- .container -->
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <!-- .entery -->
+        <div class="entry">
+            <label for="enter">Enter item: </label>
+            <input type="text" id="enter">
+            <button type="button">Add</button>
+        </div><!-- /end .entery -->
+
+        <!-- .to-do -->
+        <ul class="to-do">
+            <!-- generated content... -->
+        </ul><!-- /end .to-do -->
+    </div><!-- /end .container -->
+
+    <!-- jquery js -->
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <!-- author js -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
